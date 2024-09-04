@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .fancy-btn {
+    @apply transition-all font-bold text-sm sm:text-3xl py-2 px-4 mt-8 bg-none text-red-500 rounded-xl border-4 border-red-500;
+  }
+  .fancy-btn-cv {
+    @apply transition-all font-bold text-xl py-2 px-4 mt-8 bg-none text-red-500 rounded-sm border-red-500;
+  }
+  .fancy-hover {
+    @apply hover:shadow-md hover:border-red-400 hover:shadow-red-400 hover:text-red-400 hover:-translate-y-px;
+  }
+  .fancy-placeholder {
+    @apply placeholder-white placeholder-opacity-50 placeholder:italic p-2;
+  }
+  .scroll-btn-to-top {
+    @apply px-3 py-3 text-red-500 rounded-full cursor-pointer transition-transform duration-300 outline-none fixed bottom-6 right-4 sm:right-6 z-50 hover:scale-110 active:scale-90;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  background-image: url("img/6.jpg");
+}
+
+#about {
+  background-image: url("img/6.jpg");
+}
+
+#skill {
+  background-image: url("img/6.jpg");
+}
+
+#contact {
+  background-image: url("img/6.jpg");
+}
+
+#resume {
+  background-image: url("img/6.jpg");
+}

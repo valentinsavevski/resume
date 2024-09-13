@@ -2,6 +2,22 @@
 //   element.style.border = "1px solid red";
 // });
 
+// =========SCROLL UP BTN DISAPPEARING=========
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  const scrollBtn = document.getElementById("scroll-up-btn");
+
+  const navbarBottom = navbar.getBoundingClientRect().bottom;
+
+  const offset = 50;
+
+  if (navbarBottom >= window.innerHeight - offset) {
+    scrollBtn.classList.add("hidden");
+  } else {
+    scrollBtn.classList.remove("hidden");
+  }
+});
+
 // =========HIDE SHOW BUTTON RESUME SCRIPT=============
 // iFrames & buttons const
 const cvBtn = document.getElementById("cvBtn");
